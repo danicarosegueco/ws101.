@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>P-Burrits</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>P-BURRITS</h1>
+    <p id="tag">Siguradong Sulit and Bitbit na P-Burrit!</p>
+  </header>
+
+  <nav>
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('menu')">Menu</button>
+    <button onclick="showSection('about')">About Us</button>
+    <button onclick="showSection('gallery')">Gallery</button>
+    <button onclick="showSection('contact')">Contact</button>
+  </nav>
+
+<section id="home" class="active">
+  <div class="hero fade-in">
+      <img src="home.jpg" alt="Delicious burrito" />
+      <h2>Welcome to P-Burrits!</h2>
+      <p>Fresh, flavorful, and fun food every day.</p>
+    </div>
+    <!-- Featured Products Section -->
+     <h2>Featured Products</h2>
+    <div class="featured-products fade-in">
+        
+    <div class="product-item">
+        <img src="shawarma-chicken.jpg" alt="Burrito" />
+        <p><strong>Shawarma Pie Chicken</strong></p>
+      </div>
+    <div class="product-item">
+        <img src="shawarma-beef.jpg" alt="Beef Burrito" />
+       <p><strong>Shawarma Pie Beef</strong></strong></p>
+      </div>
+    <div class="product-item">
+        <img src="strawberryfm.jpg" alt="Strawberry Milk" />
+        <p><strong>Strawberry Fruit Milk</strong></p>
+      </div>
+    <div class="product-item">
+        <img src="strawberry.jpg" alt="Fruit Soda" />
+        <p><strong>Refreshing Fruit Soda</strong></p>
+      </div>
+</div>
+  </section>
+
+  <section id="menu">
+    <h2>Menu</h2>
+    <div class="menu-tabs">
+      <button onclick="filterMenu('all')">All</button>
+      <button onclick="filterMenu('burrito')">Burritos</button>
+      <button onclick="filterMenu('halohalo')">Halo-halo</button>
+      <button onclick="filterMenu('milk')">Fruit Milk</button>
+      <button onclick="filterMenu('soda')">Fruit Soda</button>
+    </div>
+    <div class="menu-items" id="menuItems"></div>
+    <div class="cart" id="cart"></div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Our P-Burrits started as a simple school project — a requirement for an entrepreneurship subject. But with the unexpected support from classmates, teachers, and local community, what started as a small project eventually grew into a full-fledged business.
+      Driven by our founder's passion for fitness, it became clear that many fitness enthusiasts were looking for health-conscious food options. That's why every burrito we sell comes with a nutritional breakdown — clearly showing the percentage of carbohydrates, fats, and proteins. This makes it easier for our health-conscious customers to fit our burritos into their meal plans.</p>
+  </section>
+
+<section id="gallery">
+
+ <div id="mini-gallery" style="margin-top: 40px; padding: 20px; background: #fffdf5; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <h2 style="text-align: center; margin-bottom: 20px;">Gallery Highlights</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
+    <img src="a1.jpg" alt="Burrito 1" style="width: 150px; height: 100px; object-fit: cover; border-radius: 8px;" />
+    <img src="a2.jpg" alt="Burrito 2" style="width: 150px; height: 100px; object-fit: cover; border-radius: 8px;" />
+    <img src="a3.jpg" alt="Halo-halo" style="width: 150px; height: 100px; object-fit: cover; border-radius: 8px;" />
+    <img src="a4.jpg" alt="Fruit Soda" style="width: 150px; height: 100px; object-fit: cover; border-radius: 8px;" />
+    <img src="a5.jpg" alt="Fruit Milk" style="width: 150px; height: 100px; object-fit: cover; border-radius: 8px;" />
+    <img src="a6.jpg" alt="Fruit Milk" style="width: 150px; height: 100px; object-fit: cover; border-radius: 8px;" />
+    <img src="a7.jpg" alt="Fruit Milk" style="width: 150px; height: 100px; object-fit: cover; border-radius: 8px;" />
+    <img src="a8.jpg" alt="Fruit Milk" style="width: 150px; height: 100px; object-fit: cover; border-radius: 8px;" />
+    <img src="a9.jpg" alt="Fruit Milk" style="width: 150px; height: 100px; object-fit: cover; border-radius: 8px;" />
+</div>
+</div>
+</section>
+
+
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Phone: 09169131032</p>
+    <p>Visit us: Purok 4 Dolores Magalang Pampanga </p>
+  </section>
+
+  <div class="popup" id="thankYouPopup">
+    <div class="popup-content">
+      <h2>🎉 Thank You!</h2>
+      <p>Your order has been placed successfully. We hope you enjoy every bite!</p>
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2025 P-BURRITS. All rights reserved.</p>
+    <p>Follow us on:
+      <a href="https://www.facebook.com/profile.php?id=61555426561366" target="_blank">Facebook</a>
+    </p>
+  </div>
+</footer>
+
+  <script src="java.js"></script>
+</body>
+</html>
